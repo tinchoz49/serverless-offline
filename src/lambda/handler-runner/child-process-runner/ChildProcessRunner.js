@@ -1,5 +1,8 @@
 import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { execaNode } from 'execa'
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 const childProcessHelperPath = path.resolve(__dirname, 'childProcessHelper.js')
 

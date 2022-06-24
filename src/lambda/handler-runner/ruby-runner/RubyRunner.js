@@ -1,7 +1,10 @@
 import { EOL, platform } from 'node:os'
-import { relative, resolve } from 'node:path'
+import { relative, resolve, dirname } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { cwd } from 'node:process'
 import { execa } from 'execa'
+
+const __dirname = dirname(fileURLToPath(import.meta.url))
 
 const { parse, stringify } = JSON
 const { has } = Reflect

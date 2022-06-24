@@ -1,8 +1,11 @@
 import { spawn } from 'node:child_process'
 import { EOL, platform } from 'node:os'
-import { delimiter, join, relative, resolve } from 'node:path'
+import { delimiter, join, relative, resolve, dirname } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import process, { cwd } from 'node:process'
 import readline from 'node:readline'
+
+const __dirname = dirname(fileURLToPath(import.meta.url))
 
 const { parse, stringify } = JSON
 const { assign } = Object
