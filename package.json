@@ -49,7 +49,7 @@
     "websocket"
   ],
   "files": [
-    "dist/**",
+    "src/**",
     "package.json",
     "LICENSE",
     "README.md"
